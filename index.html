@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Bryan Reeder | Portfolio</title>
+  <style>
+    :root {
+      --green: #219150;
+      --gold: #ffd700;
+      --white: #fff;
+      --dark: #101820;
+      --light: #f6f8f6;
+      --shadow: 0 4px 16px rgba(33, 145, 80, 0.06);
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, var(--green), var(--gold));
+      color: var(--dark);
+      padding: 2rem 0 1.5rem 0;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: background 0.5s;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-shadow: 1px 2px 8px rgba(0,0,0,0.06);
+    }
+    header p {
+      margin: 0.2rem 0 0 0;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #222;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: var(--white);
+      border-radius: 1.2rem;
+      box-shadow: var(--shadow);
+      padding: 2rem 2.5vw;
+      animation: fadeIn 1.4s cubic-bezier(.23,1.07,.59,.97);
+    }
+    section {
+      margin-bottom: 2.5rem;
+      transition: box-shadow 0.4s;
+      border-radius: 1rem;
+      padding: 1.2rem 1rem;
+      background: linear-gradient(92deg, var(--gold) 0%, var(--white) 100%);
+      box-shadow: 0 2px 12px rgba(33,145,80,0.03);
+    }
+    section h2 {
+      color: var(--green);
+      margin-top: 0;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 40%;
+      background: var(--gold);
+      border-radius: 2px;
+      margin-top: 6px;
+      transition: width 0.5s;
+    }
+    section:hover {
+      box-shadow: 0 8px 28px rgba(33, 145, 80, 0.09);
+      background: linear-gradient(92deg, var(--gold) 6%, var(--light) 94%);
+      transform: translateY(-2px) scale(1.01);
+    }
+    ul, ol {
+      padding-left: 1.4em;
+    }
+    .projects-list li {
+      margin-bottom: 0.8em;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75em;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .skills-list li {
+      background: var(--green);
+      color: var(--white);
+      padding: 0.48em 1.2em;
+      border-radius: 2em;
+      font-size: 1rem;
+      margin-bottom: 0.3em;
+      box-shadow: 0 1px 4px rgba(33,145,80,0.09);
+      transition: background 0.3s, color 0.3s;
+    }
+    .skills-list li:hover {
+      background: var(--gold);
+      color: var(--dark);
+    }
+    .contact-info a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .contact-info a:hover {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(60px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 650px) {
+      main {
+        padding: 1rem 2vw;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bryan Reeder</h1>
+    <p>Fiscal &amp; Business Specialist | USF Health Libraries<br>
+      MS, AI &amp; Business Analytics Student (FinTech concentration)</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        My name is Bryan Reeder and I am a Fiscal and Business Specialist for the USF Health Libraries. I am currently pursuing a Master of Science in Artificial Intelligence and Business Analytics at the University of South Florida, with a concentration in FinTech.<br><br>
+        I have a strong passion for using technology and data to solve business challenges, drive efficiency, and inform strategic decisions. My career goal is to bridge the gap between business and technology, specializing in financial technology and data-driven solutions.<br>
+        I enjoy collaborating with diverse teams, tackling complex business problems, and continuously learning new skills in analytics, automation, and software development.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <strong>Hospital Administrator Database:</strong><br>
+          Designed and built a relational database for hospital administration workflows, improving data access, reporting, and compliance across departments.
+        </li>
+        <li>
+          <strong>USF Health Libraries Internal Budget Request Workbook:</strong><br>
+          Developed an advanced Excel workbook for internal budget requests, automating calculations and reporting. 
+          <a href="mailto:breeder@usf.edu?subject=Request%20for%20USF%20Health%20Libraries%20Budget%20Workbook" target="_blank">Request access</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Microsoft Word</li>
+        <li>Excel</li>
+        <li>PowerPoint</li>
+        <li>PowerBI</li>
+        <li>PowerAutomate</li>
+        <li>SQL</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>Public Speaking</li>
+        <li>Teamwork</li>
+        <li>Leadership</li>
+        <li>Consulting</li>
+        <li>Problem-Solving</li>
+        <li>Finance &amp; Accounting</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p>
+          Email: <a href="mailto:breeder@usf.edu">breeder@usf.edu</a><br>
+          LinkedIn: <a href="https://www.linkedin.com/in/bryan-reeder-41390724a?utm" target="_blank">
+            bryan-reeder-41390724a
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
